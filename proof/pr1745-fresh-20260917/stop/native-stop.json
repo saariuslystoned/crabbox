@@ -1,0 +1,122 @@
+{
+  "mode": "execute",
+  "phase": "native-stop",
+  "result": "PASS",
+  "started_utc": "2026-09-17T20:23:09.887692+00:00",
+  "inventory_before_utc": "2026-09-17T20:23:09.965657+00:00",
+  "native_stop_utc": "2026-09-17T20:23:10.212940+00:00",
+  "inventory_after_utc": "2026-09-17T20:23:12.578689+00:00",
+  "proves": "implemented-force-stop-delete-not-graceful",
+  "graceful_shutdown_claimed": false,
+  "pre_stop_via_prlctl": false,
+  "guest_shutdown": false,
+  "binary_sha256": "27c722172163ac237a29a687957378a069f0ce3ab411c8e119920b48d36063c9",
+  "claim": {
+    "leaseID": "cbx_c19f90406ff5",
+    "cloudID": "65f55c4d-2f6e-42eb-bc40-8910993486f7",
+    "provider": "parallels",
+    "sshHost": "10.211.55.14",
+    "sshPort": 22,
+    "labels": {
+      "host": "local",
+      "source": "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+      "ip_source": "dhcp-mac",
+      "desktop": null
+    }
+  },
+  "preflight": {
+    "source_unrelated": {
+      "source_present": true,
+      "source_state": "stopped",
+      "unrelated_present": true,
+      "unrelated_state": "suspended",
+      "oldhost_source_present_on_this_host": false,
+      "ok": true
+    },
+    "confirmed": {
+      "id": "65f55c4d-2f6e-42eb-bc40-8910993486f7",
+      "name": "crabbox-cbx-c19f90406ff5-pr1745-fresh-dhcp",
+      "home": "$FRESH_ROOT/vms/crabbox-cbx-c19f90406ff5-pr1745-fresh-dhcp.macvm",
+      "state": "running"
+    },
+    "pre_stop_via_prlctl": false,
+    "guest_shutdown": false
+  },
+  "inventory_before": [
+    {
+      "uuid": "58b49202-a6de-4e24-ba8f-c1890c778535",
+      "status": "suspended",
+      "name": "unrelated-vm"
+    },
+    {
+      "uuid": "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+      "status": "stopped",
+      "name": "crabbox-pr1745-fresh-fixture-20260917"
+    },
+    {
+      "uuid": "65f55c4d-2f6e-42eb-bc40-8910993486f7",
+      "status": "running",
+      "name": "crabbox-cbx-c19f90406ff5-pr1745-fresh-dhcp"
+    },
+    {
+      "uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636",
+      "status": "stopped",
+      "name": "macOS"
+    }
+  ],
+  "redacted_argv": [
+    "$PINNED_CBX",
+    "stop",
+    "--provider",
+    "parallels",
+    "--target",
+    "macos",
+    "--id",
+    "cbx_c19f90406ff5"
+  ],
+  "native_stop_exit": 0,
+  "native_stop_stdout": "",
+  "native_stop_stderr": "warning: could not stop GitHub Actions hydration for cbx_c19f90406ff5: write GitHub Actions hydration stop marker on 10.211.55.14: exit status 255\ndeleted lease=cbx_c19f90406ff5 server=65f55c4d-2f6e-42eb-bc40-8910993486f7 name=crabbox-cbx-c19f90406ff5-pr1745-fresh-dhcp\n",
+  "inventory_after": [
+    {
+      "uuid": "58b49202-a6de-4e24-ba8f-c1890c778535",
+      "status": "suspended",
+      "name": "unrelated-vm"
+    },
+    {
+      "uuid": "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+      "status": "stopped",
+      "name": "crabbox-pr1745-fresh-fixture-20260917"
+    },
+    {
+      "uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636",
+      "status": "stopped",
+      "name": "macOS"
+    }
+  ],
+  "source_unrelated_after": {
+    "source_present": true,
+    "source_state": "stopped",
+    "unrelated_present": true,
+    "unrelated_state": "suspended",
+    "oldhost_source_present_on_this_host": false,
+    "ok": true
+  },
+  "absence_gates": {
+    "uuid_absent": true,
+    "bundle_absent": true,
+    "bundle": "$FRESH_ROOT/vms/crabbox-cbx-c19f90406ff5-pr1745-fresh-dhcp.macvm",
+    "claim_absent": true,
+    "lease_keys": {
+      "dir": "$FRESH_ROOT/state/crabbox/testboxes/cbx_c19f90406ff5",
+      "private_present": false,
+      "pub_present": false,
+      "dir_present": false,
+      "read_private_key": false
+    },
+    "lease_metadata_absent": true,
+    "ok": true,
+    "utc": "2026-09-17T20:23:12.681441+00:00"
+  },
+  "omitted": "full prlctl list -i lease-info dump"
+}

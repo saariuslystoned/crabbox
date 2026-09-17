@@ -1,0 +1,4 @@
+provisioning provider=parallels lease=cbx_c19f90406ff5 slug=pr1745-fresh-dhcp host=local source=5b2f2234-a4d2-4600-a7a3-a9c618599246 snapshot=- clone_mode=full keep=true
+parallels macOS fallback vm=65f55c4d-2f6e-42eb-bc40-8910993486f7 ip=10.211.55.14 discovery=dhcp-mac bootstrap=ssh
+provisioned lease=cbx_c19f90406ff5 vm=65f55c4d-2f6e-42eb-bc40-8910993486f7 ip=10.211.55.14
+{"provider":"parallels","leaseId":"cbx_c19f90406ff5","slug":"pr1745-fresh-dhcp","runnerTotalMs":18358,"runnerPhases":[{"name":"unattributed","ms":18358}],"syncMs":0,"syncSkipped":false,"commandMs":0,"totalMs":18358,"endToEndMs":0,"exitCode":0,"runStatus":"succeeded"}

@@ -1,0 +1,47 @@
+{
+  "result": "PASS",
+  "utc": "2026-09-17T20:23:09.753363+00:00",
+  "role": "parent independent assessment of native fresh acquisition and corrected follow-on run",
+  "implementation_commit": "0095e1a32cc6379ff0d401cd5cbd4adb5fe20923",
+  "binary_sha256": "27c722172163ac237a29a687957378a069f0ce3ab411c8e119920b48d36063c9",
+  "lease": "cbx_c19f90406ff5",
+  "vm": "65f55c4d-2f6e-42eb-bc40-8910993486f7",
+  "new_mac": "001c426e3c3b",
+  "fixture_mac": [
+    "001c42a811cf"
+  ],
+  "empty_state_before": {
+    "state_home": "$FRESH_ROOT/state",
+    "claims_absent_or_empty": true,
+    "key_dirs_absent_or_empty": true,
+    "claim_files": [],
+    "key_dirs": [],
+    "reused_prior_material": [],
+    "ok": true
+  },
+  "native_warmup_exit": 0,
+  "native_run_exit": 0,
+  "discovery": "dhcp-mac",
+  "bootstrap": "ssh",
+  "per_lease_key_fp": "256 SHA256:vBa6uzfQdc2XX9HHgkXhDw/AtMYjHlJbaV2dqwZmidI crabbox cbx_c19f90406ff5 (ED25519)",
+  "original_helper_result": "FAIL",
+  "helper_failure_reasons": [
+    "exec-unavailable whitelist omitted observed platform wording",
+    "follow-on run omitted explicit trusted bootstrap-key override; initial acquire included it and passed"
+  ],
+  "original_helper_unchanged_sha256": "fa195189eb52c58591054b042aa2807a93045a6afe1bfe85b5bad00f52dd06cc",
+  "no_manual_lease_setup": true,
+  "no_tools": {
+    "ip_blank": true,
+    "service_absent": true,
+    "service_disabled": true,
+    "guest_exec_exit": 255
+  },
+  "evidence_sha256": {
+    "evidence/acquire/native-warmup.cmd.json": "a88671d7a7c4e3bb8a9c14c0560e8966e59f702d4e7a08e230d31e5125eb332b",
+    "evidence/acquire/lease-key-ssh-guest-audit.cmd.json": "bfbaa121aa3c548f1b21c2bd70036b7b6ffbf44e27d4d3bebacc835ea79fe673",
+    "evidence/acquire/native-run-explicit-bootstrap.json": "d9a7e5ad6572749a37e7f227588cc391a0a3c86308b97ed9f13db22cd4830867",
+    "evidence/acquire/matching-dhcp-row.txt": "160711a0662fe568eef64b1e947feaebae3b5793a0fd6df2b80d52a6ff7da7d0",
+    "frozen-before-parent.json": "b39699248c14be3740a0c5417a4e6972557b268284dd6e2c8daeb3fb7a7ef849"
+  }
+}

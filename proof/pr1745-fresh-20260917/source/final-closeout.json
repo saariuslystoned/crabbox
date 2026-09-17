@@ -1,0 +1,33 @@
+{
+  "publication": "sanitized excerpt",
+  "original_record_sha256": "e442fafa4c04cd4daf74b9d1c94d6391961ee92d13e98bd0a23452874380c463",
+  "hash_provenance": "original_record_sha256 is SHA-256 of the local unsanitized bytes. embedded source_final_sha256 is also the original unsanitized source-final-comparison.json. MANIFEST hashes this sanitized file and need not match after path redaction.",
+  "utc": "2026-09-17T20:31:27.361809+00:00",
+  "exact_task_files_absent": {
+    "$FRESH_ROOT/secrets/id_ed25519": true,
+    "$FRESH_ROOT/secrets/id_ed25519.pub": true,
+    "$FRESH_ROOT/ssh/known_hosts": true,
+    "$FRESH_ROOT/ssh/host_known_hosts": true,
+    "$FRESH_ROOT/vms/crabbox-cbx-c19f90406ff5-pr1745-fresh-dhcp.macvm": true,
+    "$FRESH_ROOT/fixture-vms/crabbox-pr1745-fresh-fixture-20260917.macvm": true
+  },
+  "remaining_task_processes": [],
+  "inventory": [
+    {
+      "uuid": "58b49202-a6de-4e24-ba8f-c1890c778535",
+      "status": "suspended",
+      "ip_configured": "-",
+      "name": "unrelated-vm"
+    },
+    {
+      "uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636",
+      "status": "stopped",
+      "ip_configured": "-",
+      "name": "macOS"
+    }
+  ],
+  "source_final_sha256": "372248e49d658763d986def1ee97074009ce28ac97c87b8913b02d34992da1d5",
+  "source_final_result": "PASS",
+  "result": "PASS",
+  "note": "Only exact task resources inspected; no unrelated listener/process terminated. Task fixture, lease bundles, keys, and known_hosts absent. remaining_task_processes is the empty array."
+}

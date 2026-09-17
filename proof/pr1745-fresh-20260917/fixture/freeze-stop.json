@@ -1,0 +1,30 @@
+{
+  "utc": "2026-09-17T20:16:19.867084+00:00",
+  "role": "freeze owned prepared fixture before fresh native acquire",
+  "argv": [
+    "/usr/local/bin/prlctl",
+    "stop",
+    "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+    "--kill"
+  ],
+  "exit": 0,
+  "stdout": "Stopping the VM...\nThe VM has been forcibly stopped\n",
+  "independently_stopped": true,
+  "inventory": [
+    {
+      "uuid": "58b49202-a6de-4e24-ba8f-c1890c778535",
+      "status": "suspended",
+      "name": "unrelated-vm"
+    },
+    {
+      "uuid": "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+      "status": "stopped",
+      "name": "crabbox-pr1745-fresh-fixture-20260917"
+    },
+    {
+      "uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636",
+      "status": "stopped",
+      "name": "macOS"
+    }
+  ]
+}

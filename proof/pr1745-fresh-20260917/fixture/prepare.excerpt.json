@@ -1,0 +1,43 @@
+{
+  "result": "PREPARED_PENDING_RESTART_AND_AUDIT",
+  "role": "operator image prerequisites only",
+  "utc": "2026-09-17T20:13:31.010360+00:00",
+  "fixture": {
+    "id": "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+    "name": "crabbox-pr1745-fresh-fixture-20260917",
+    "home": "$FRESH_ROOT/fixture-vms/crabbox-pr1745-fresh-fixture-20260917.macvm",
+    "state": "running"
+  },
+  "source_operation": false,
+  "parent_corrections": "no -- in prlctl exec; pre-reviewed shell comments are not commands; original helper no-reboot comment false-refusal retained",
+  "commands": [
+    {
+      "name": "enable-ssh",
+      "exit": 0,
+      "stdout": "sshd_print=ok\nenable_ssh=attempted\n"
+    },
+    {
+      "name": "install-sudoers",
+      "exit": 0,
+      "stdout": "sudoers_fragment=installed\nsudo_n=ok\n"
+    },
+    {
+      "name": "install-node",
+      "exit": 0,
+      "stdout": "v24.19.0\n11.17.0\nnode_install=official_pinned_24.19.0\noperator_image_prerequisite=1\n"
+    },
+    {
+      "name": "disable-prltoolsd",
+      "argv": [
+        "/usr/local/bin/prlctl",
+        "exec",
+        "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+        "/bin/launchctl",
+        "disable",
+        "system/com.parallels.vm.prltoolsd"
+      ],
+      "exit": 0
+    }
+  ],
+  "omitted": "full prlctl list -i dumps"
+}

@@ -1,0 +1,9 @@
+{
+  "purpose": "disposable prepared-image fixture, NOT accepted fresh lease proof",
+  "source_uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636",
+  "fixture_uuid": "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+  "fixture_name": "crabbox-pr1745-fresh-fixture-20260917",
+  "fixture_bundle": "$FRESH_ROOT/fixture-vms/crabbox-pr1745-fresh-fixture-20260917.macvm/",
+  "owned_by_task": true,
+  "note": "Recorded at clone-from-source, before operator guest writes. Later SSH/sudo/Node/Tools-disable mutated this fixture only."
+}

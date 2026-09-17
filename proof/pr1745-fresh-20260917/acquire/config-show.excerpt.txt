@@ -1,0 +1,10 @@
+# Labeled excerpt. All other provider stanzas and provider_status rows omitted.
+# Source: crabbox config show (inspection=offline; visible values may be defaults).
+
+config=$FRESH_ROOT/config/isolated.yaml
+provider=parallels provider_selected=true provider_source=repo_config target=macos
+ssh=parallels-02@<host>:22 fallback_ports=22 key=<omitted-host-ssh-key>
+parallels template=- source=- source_id=5b2f2234-a4d2-4600-a7a3-a9c618599246 snapshot=- snapshot_id=- clone_mode=full host=local user=parallels-02 auth=missing work_root=$GUEST_HOME/crabbox-work startup_timeout=15m0s templates=0 hosts=0
+provider_status name=parallels supported=true selected=true selection_source=repo_config configuration=explicit input_coverage_complete=true provider_sources=repo_config generic_sources=repo_config auth_status=unchecked readiness=unchecked auth_interfaces=local-host:local_context;remote-host:ssh
+
+# Filtered: every other provider= / provider_status name= row from the all-providers dump.

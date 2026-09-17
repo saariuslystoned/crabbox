@@ -1,0 +1,58 @@
+{
+  "result": "PASS",
+  "utc": "2026-09-17T20:27:49.528645+00:00",
+  "execution": "parent exact native delete using reviewed preflight/argv/absence guards",
+  "helper_attempts": "Original helper refused verdict field shape, then failed module resolution before deletion; logs retained and not published. Parent operations separately recorded here.",
+  "preflight": {
+    "source_unrelated": {
+      "source_state": "stopped",
+      "unrelated_state": "suspended",
+      "ok": true
+    },
+    "lease_absence": {
+      "uuid_absent": true,
+      "bundle_absent": true,
+      "claim_absent": true,
+      "lease_metadata_absent": true,
+      "ok": true
+    },
+    "confirmed_fixture": {
+      "id": "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+      "name": "crabbox-pr1745-fresh-fixture-20260917",
+      "home": "$FRESH_ROOT/fixture-vms/crabbox-pr1745-fresh-fixture-20260917.macvm",
+      "state": "stopped"
+    },
+    "frozen_verdict": "PASS",
+    "wildcard_delete": false,
+    "global_cleanup": false,
+    "reclaim": false
+  },
+  "delete": {
+    "argv": ["/usr/local/bin/prlctl", "delete", "5b2f2234-a4d2-4600-a7a3-a9c618599246"],
+    "exit": 0,
+    "stdout": "Removing the VM...\nThe VM has been successfully removed.\n",
+    "utc": "2026-09-17T20:27:49.058023+00:00"
+  },
+  "inventory_after": [
+    {"uuid": "58b49202-a6de-4e24-ba8f-c1890c778535", "status": "suspended", "name": "unrelated-vm"},
+    {"uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636", "status": "stopped", "name": "macOS"}
+  ],
+  "after": {
+    "source_state": "stopped",
+    "unrelated_state": "suspended",
+    "fixture_absent": true,
+    "bundle_absent": true,
+    "ok": true,
+    "utc": "2026-09-17T20:27:49.521326+00:00"
+  },
+  "secret_unlinks": [
+    {"path": "$TASK_SECRETS/id_ed25519", "unlinked": true, "read_private_key": false},
+    {"path": "$TASK_SECRETS/id_ed25519.pub", "unlinked": true, "read_private_key": false},
+    {"path": "$FRESH_ROOT/ssh/known_hosts", "unlinked": true, "read_known_hosts": false},
+    {"path": "$FRESH_ROOT/ssh/host_known_hosts", "unlinked": true, "read_known_hosts": false}
+  ],
+  "read_private_key": false,
+  "source_operation": false,
+  "wildcard_delete": false,
+  "omitted": "full prlctl list -i dump"
+}

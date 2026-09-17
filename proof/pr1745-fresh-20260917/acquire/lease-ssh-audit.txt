@@ -1,0 +1,14 @@
+audit_user=parallels-02
+audit_uid=501
+authorized_keys_count=2
+256 SHA256:Gddbnk755iwVdqFqm1HGr9cZBmPm1XKLxX4h48EQFZo crabbox-pr1745-fresh-bootstrap-20260917 (ED25519)
+256 SHA256:vBa6uzfQdc2XX9HHgkXhDw/AtMYjHlJbaV2dqwZmidI crabbox cbx_c19f90406ff5 (ED25519)
+product_marker=/usr/local/bin/crabbox-ready present
+product_marker=/var/lib/crabbox/bootstrapped present
+product_marker=/var/db/crabbox/bootstrapped absent
+product_marker=$GUEST_HOME/crabbox-work present
+node=v24.19.0
+npm=11.17.0
+prltoolsd_print=absent
+		"com.parallels.vm.prltoolsd" => disabled
+sudo_n=ok

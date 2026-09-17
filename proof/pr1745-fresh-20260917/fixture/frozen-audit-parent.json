@@ -1,0 +1,21 @@
+{
+  "utc": "2026-09-17T20:16:19.540343+00:00",
+  "result": "PASS",
+  "role": "parent independent frozen image prerequisite audit",
+  "original_helper_result": "FAIL: recognized-message whitelist did not include actual platform wording",
+  "evidence_path": "evidence/audit/frozen-audit.json",
+  "checks": {
+    "tools_unavailable": true,
+    "service_absent_disabled": true,
+    "ssh_authenticated": true,
+    "taskstate_empty": true,
+    "bootstrap_key_only": true,
+    "all_productmarkers_absent": true
+  },
+  "original_prlctl_exec": {
+    "exit": 255,
+    "available": false,
+    "guest_tools_unavailable": false,
+    "text": "Unable to open new session in this virtual machine. Make sure your virtual machine has finished booting, runs the latest version of Parallels Tools, and is not isolated from the host OS."
+  }
+}

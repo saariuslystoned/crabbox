@@ -1,0 +1,32 @@
+{
+  "mode": "execute",
+  "phase": "frozen-audit",
+  "helper_result": "FAIL",
+  "parent_gate": "PASS (see frozen-audit-parent.json)",
+  "fixture": {
+    "uuid": "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+    "name": "crabbox-pr1745-fresh-fixture-20260917",
+    "home": "$FRESH_ROOT/fixture-vms/crabbox-pr1745-fresh-fixture-20260917.macvm",
+    "state_at_audit": "running",
+    "mac": "001c42a811cf"
+  },
+  "source_unrelated": {
+    "source_state": "stopped",
+    "unrelated_state": "suspended",
+    "ok": true
+  },
+  "tools": {
+    "tools_ip_addresses": [],
+    "guest_tools_state": "not_installed",
+    "service_loaded": false,
+    "service_disabled": true,
+    "exec_available": false
+  },
+  "prlctl_exec": {
+    "exit": 255,
+    "text": "Unable to open new session in this virtual machine. Make sure your virtual machine has finished booting, runs the latest version of Parallels Tools, and is not isolated from the host OS."
+  },
+  "guest_audit": "audit_user=parallels-02\naudit_uid=501\nauthorized_keys_count=1\n256 SHA256:Gddbnk755iwVdqFqm1HGr9cZBmPm1XKLxX4h48EQFZo crabbox-pr1745-fresh-bootstrap-20260917 (ED25519)\nproduct_marker=/usr/local/bin/crabbox-ready absent\nproduct_marker=/var/lib/crabbox/bootstrapped absent\nproduct_marker=/var/db/crabbox/bootstrapped absent\nproduct_marker=$GUEST_HOME/crabbox-work absent\nnode=v24.19.0\nnpm=11.17.0\nprltoolsd_print=absent\n\t\t\"com.parallels.vm.prltoolsd\" => disabled\nsudo_n=ok\n",
+  "bootstrap_fingerprint": "256 SHA256:Gddbnk755iwVdqFqm1HGr9cZBmPm1XKLxX4h48EQFZo crabbox-pr1745-fresh-bootstrap-20260917 (ED25519)",
+  "omitted": "full prlctl list -i dumps and ssh argv with host paths"
+}

@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "utc": "2026-09-17T20:27:16.397184+00:00",
+  "fixture_uuid": "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+  "before_record_sha256": "b9a3c87abb8694d5de8aabed7af97eff2c70081998fb2cfca0e9aba2eb0627af",
+  "after_record_sha256": "1aea06f94d31e4b55703f666adb23bd94c5639f38d5f804657bfe28a7c993b6e",
+  "equal_paths": [
+    "harddisk.hdd/harddisk.hdd.0.{5fbaabe3-6958-40ff-92a7-860e329aab41}.hds",
+    "harddisk.hdd/harddisk.hdd.0.{db2643d9-6201-49bd-90c0-5c3e3cc3f2e5}.hds",
+    "config.pvs",
+    "Snapshots.xml",
+    "aux.bin",
+    "machw.bin",
+    "macid.bin",
+    "harddisk.hdd/DiskDescriptor.xml"
+  ],
+  "note": "Parent comparison of completed before/after records, all 8 equal. Original records unchanged."
+}

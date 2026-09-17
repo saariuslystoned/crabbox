@@ -1,0 +1,31 @@
+{
+  "leaseID": "cbx_c19f90406ff5",
+  "cloudID": "65f55c4d-2f6e-42eb-bc40-8910993486f7",
+  "sshHost": "10.211.55.14",
+  "sshPort": 22,
+  "nics_macs": [
+    "001c426e3c3b"
+  ],
+  "fixture_mac": "001c42a811cf",
+  "discovery": "dhcp-mac",
+  "bootstrap": "ssh",
+  "claimed_utc": "2026-09-17T20:21:09.308921+00:00",
+  "labels": {
+    "ip_source": "dhcp-mac",
+    "provider": "parallels",
+    "source": "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+    "server_type": "template-5b2f2234-a4d2-4600-a7a3-a9c618599246",
+    "slug": "pr1745-fresh-dhcp",
+    "state": "ready",
+    "target": "macos",
+    "host": "local"
+  },
+  "omitted_labels": [
+    "provider_key",
+    "created_by",
+    "class",
+    "profile",
+    "keep",
+    "ttl/idle timestamps"
+  ]
+}

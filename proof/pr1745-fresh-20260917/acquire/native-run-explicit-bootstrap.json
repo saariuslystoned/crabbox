@@ -1,0 +1,23 @@
+{
+  "started": "2026-09-17T20:22:25.626546+00:00",
+  "finished": "2026-09-17T20:22:26.880058+00:00",
+  "argv": [
+    "$PINNED_CBX",
+    "run",
+    "--provider",
+    "parallels",
+    "--target",
+    "macos",
+    "--id",
+    "cbx_c19f90406ff5",
+    "--no-sync",
+    "--parallels-bootstrap-key",
+    "$TASK_SECRETS/id_ed25519",
+    "--",
+    "/usr/bin/sw_vers"
+  ],
+  "exit": 0,
+  "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.5.2\nBuildVersion:\t\t25F84\n",
+  "stderr_excerpt": "running on 10.211.55.14 /usr/bin/sw_vers\ncommand complete in 318ms total=675ms\nrun summary lease=250ms bootstrap=204ms sync=0s command=318ms total=675ms end_to_end=1.14s sync_skipped=true exit=0\n",
+  "note": "Earlier helper omitted explicit trusted bootstrap-key override for run. CRABBOX_CONFIG is repo_config, deliberately cannot select that host-side key. Initial warmup did pass explicit override; no acquisition repeated or guest modified."
+}

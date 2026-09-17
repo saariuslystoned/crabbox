@@ -1,0 +1,42 @@
+{
+  "utc_start": "2026-09-17T20:16:37.006575+00:00",
+  "fixture_uuid": "5b2f2234-a4d2-4600-a7a3-a9c618599246",
+  "fixture_stopped": true,
+  "role": "frozen operator-prepared fixture baseline before native acquire",
+  "hashes": {
+    "harddisk.hdd/harddisk.hdd.0.{5fbaabe3-6958-40ff-92a7-860e329aab41}.hds": {
+      "sha256": "bdecfccd3d57143d48c8369e99f505dd119f2695b8b1bb2bf5b65e679e3c9bd9",
+      "bytes": 137438953472
+    },
+    "harddisk.hdd/harddisk.hdd.0.{db2643d9-6201-49bd-90c0-5c3e3cc3f2e5}.hds": {
+      "sha256": "aa725e3236e8132f1890daa20d671526795142cdeafab03444ecc2ca814b6ea0",
+      "bytes": 137438953472
+    },
+    "config.pvs": {
+      "sha256": "1d79a1e777d5913c2fa0f6d84245ede6784a6ec166ead183adfbb2a5e970a25b",
+      "bytes": 28744
+    },
+    "Snapshots.xml": {
+      "sha256": "b98767343173f4f4df44e4ebad51ea05a545e4971db44baae67f8b9e6a577c08",
+      "bytes": 927
+    },
+    "aux.bin": {
+      "sha256": "d4df08ae73d075a4d051dbbe292379a44d6846354d43154f5fd50d6088478933",
+      "bytes": 33579164
+    },
+    "machw.bin": {
+      "sha256": "976e66740c64041cf9f127588f93eabf7efb9e7d3cbaee9582bcded88ba5e8d3",
+      "bytes": 132
+    },
+    "macid.bin": {
+      "sha256": "232833db3b7dc2dd1c8a2008edf3d4b705164504e1ee5501ad13b429d342fa4b",
+      "bytes": 68
+    },
+    "harddisk.hdd/DiskDescriptor.xml": {
+      "sha256": "39fb0ca3fabc9183fcb9ed8687b0797eeaee0b311364369f817581b5e854bd2f",
+      "bytes": 2340
+    }
+  },
+  "utc_end": "2026-09-17T20:19:44.613802+00:00",
+  "result": "PASS"
+}
