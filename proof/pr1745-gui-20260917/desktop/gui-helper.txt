@@ -1,0 +1,39 @@
+stage.exit=0
+stage.exit=0
+stage.exit=0
+staged guest=/tmp/cbxgui1745-create-account.sh odpasswd=/tmp/cbxgui1745-od-passwd
+account.stdout: ready user=cbxgui1745 admin=1 remote_management=normal-guest-gui tcc_cli=not_granted
+account.stderr: native-adduser tool=sysadminctl password_flag=- delivery=pty-after-prompt
+account.stderr: pty-child-argv=/usr/sbin/sysadminctl -addUser cbxgui1745 -fullName cbxgui1745 -UID 502 -GID 20 -shell /bin/zsh -home /Users/cbxgui1745 -admin -password - argv_has_secret=0
+account.stderr: pty-prompt=new-user-password secret_fed=1
+account.stderr: native-verify user=cbxgui1745 uid=502 verify=ok
+account.stderr: password-set user=cbxgui1745 uid=502 via=sysadminctl-pty verify=ok
+account.stderr: auth_authority=present user=cbxgui1745 uid=502 via=sysadminctl-pty admin=1
+account.exit=0
+account=created user=cbxgui1745 admin=1 password_delivery=ssh-stdin-fd3 kickstart=not_invoked
+gui-hold=ready timeout=30m stdin commands=status,field-observed,password,type-user,key,rfb,crabbox-screenshot,crabbox-type,capture,quit
+gui-hold=password-in-memory-only output-scrubbed field-observed=0
+gui-hold=password-command-requires-field-observed
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0
+gui-hold=key escape
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0
+gui-hold=key return
+gui-hold=field-observed exact-masked-password-field=parent-confirmed
+prlctl-json.exit=0
+gui-keys=sent events=82 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0
+gui-hold=password-typed-into-observed-field return=not-sent
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0
+gui-hold=key return
+gui-hold=field-observed exact-masked-password-field=parent-confirmed
+prlctl-json.exit=0
+gui-keys=sent events=82 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0
+gui-hold=password-typed-into-observed-field return=not-sent
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0
+gui-hold=key return
+crabbox.stderr: lease cbx_12f11bb0ab75 was not created with desktop=true; warm a new lease with --desktop
+crabbox.exit=2
+crabbox command failed

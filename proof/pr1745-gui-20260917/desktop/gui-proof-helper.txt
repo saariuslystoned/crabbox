@@ -1,0 +1,53 @@
+stage.exit=0
+stage.exit=0
+stage.exit=0
+staged guest=/tmp/cbxproof1745-create-account.sh odpasswd=/tmp/cbxproof1745-od-passwd ssh-user=parallels-02-bootstrap
+account.stdout: ready user=cbxproof1745 admin=1 remote_management=normal-guest-gui tcc_cli=not_granted
+account.stderr: native-adduser tool=sysadminctl password_flag=- delivery=pty-after-prompt
+account.stderr: pty-child-argv=/usr/sbin/sysadminctl -addUser cbxproof1745 -fullName cbxproof1745 -UID 503 -GID 20 -shell /bin/zsh -home /Users/cbxproof1745 -admin -password - argv_has_secret=0
+account.stderr: pty-prompt=new-user-password secret_fed=1
+account.stderr: native-verify user=cbxproof1745 uid=503 verify=ok
+account.stderr: password-set user=cbxproof1745 uid=503 via=sysadminctl-pty verify=ok
+account.stderr: auth_authority=present user=cbxproof1745 uid=503 via=sysadminctl-pty admin=1
+account.exit=0
+account=created user=cbxproof1745 admin=1 password_delivery=ssh-stdin-fd3 kickstart=not_invoked
+gui-hold=ready timeout=30m stdin commands=status,field-observed,password,type-user,key,rfb,crabbox-screenshot,crabbox-type,set-crabbox,capture,quit
+gui-hold=password-in-memory-only output-scrubbed field-observed=0
+gui-hold=password-command-requires-field-observed-single-use
+gui-hold=command-errors-retain-secret=1
+rfb-session.stdout: rfb-session accepted_security=30 framebuffer_pending=2048x2442
+rfb-session.stdout: rfb-session initial_frame=$TASK_ROOT/evidence/rfb-after.png
+rfb-session.stdout: rfb-session class=input-effect-candidate security=30 framebuffer=2048x2442 nonblack=1 keys=86 user=cbxproof1745 frame_changed=1 input_effect_candidate=1 nonce_text_observation=0
+rfb-session.stdout: screenshot=$TASK_ROOT/evidence/rfb-after.png
+rfb-session.exit=0
+gui-hold=rfb-probe-finished password-via=env-only
+prlctl-capture.stdout: Capture the VM screen...
+prlctl-capture.stdout: The VM screen is stored in $TASK_ROOT/evidence/console-after.png.
+prlctl-capture.exit=0
+independent_capture=/usr/local/bin/prlctl capture cc38d3ad-2e77-4aa1-b83c-65b3cc145ea0 --file $TASK_ROOT/evidence/console-after.png
+gui-hold=set-crabbox path-admitted retained-secret=1 crabbox=$TASK_ROOT/crabbox-1982f4e8
+gui-hold=field-observed exact-masked-password-field=parent-confirmed
+prlctl-json.exit=0
+gui-keys=sent events=86 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=password-typed-into-observed-field return=not-sent field-observed=consumed
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=key return
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=key return
+gui-hold=command-error command=rfb retained-secret=1 error=ssh VNC tunnel exited before RFB connect:
+gui-hold=command-error command=rfb retained-secret=1 error=ssh VNC tunnel exited before RFB connect:
+rfb-session.stdout: rfb-session accepted_security=30 framebuffer_pending=2048x2442
+rfb-session.stdout: rfb-session initial_frame=$TASK_ROOT/evidence/rfb-after.png
+rfb-session.stdout: rfb-session class=input-effect-candidate security=30 framebuffer=2048x2442 nonblack=1 keys=86 user=cbxproof1745 frame_changed=1 input_effect_candidate=1 nonce_text_observation=0
+rfb-session.stdout: screenshot=$TASK_ROOT/evidence/rfb-after.png
+rfb-session.exit=0
+gui-hold=rfb-probe-finished password-via=env-only
+crabbox.stdout: screenshot: $TASK_ROOT/evidence/rfb-after.png
+crabbox.exit=0
+gui-hold=crabbox-screenshot password-via=env-only parallels-user=cbxproof1745
+crabbox.stdout: typed: lease=cbx_12f11bb0ab75 bytes=22 method=vnc-key
+crabbox.exit=0
+gui-hold=crabbox-type password-via=env-only text-is-nonsecret parallels-user=cbxproof1745
+gui-hold=quit

@@ -1,0 +1,9 @@
+
+	disabled services = {
+		"com.apple.screensharing" => enabled
+		"com.apple.CSCSupportd" => disabled
+		"com.apple.mdmclient.daemon.runatboot" => disabled
+		"com.apple.ftpd" => disabled
+		"com.openssh.sshd" => enabled
+		"com.parallels.vm.prltoolsd" => disabled
+	}

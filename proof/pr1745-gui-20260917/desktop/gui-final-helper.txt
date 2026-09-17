@@ -1,0 +1,82 @@
+stage.exit=0
+stage.exit=0
+stage.exit=0
+staged guest=/tmp/cbxfinal1745-create-account.sh odpasswd=/tmp/cbxfinal1745-od-passwd ssh-user=parallels-02-bootstrap
+account.stdout: ready user=cbxfinal1745 admin=1 remote_management=normal-guest-gui tcc_cli=not_granted
+account.stderr: native-adduser tool=sysadminctl password_flag=- delivery=pty-after-prompt
+account.stderr: pty-child-argv=/usr/sbin/sysadminctl -addUser cbxfinal1745 -fullName cbxfinal1745 -UID 504 -GID 20 -shell /bin/zsh -home /Users/cbxfinal1745 -admin -password - argv_has_secret=0
+account.stderr: pty-prompt=new-user-password secret_fed=1
+account.stderr: native-verify user=cbxfinal1745 uid=504 verify=ok
+account.stderr: password-set user=cbxfinal1745 uid=504 via=sysadminctl-pty verify=ok
+account.stderr: auth_authority=present user=cbxfinal1745 uid=504 via=sysadminctl-pty admin=1
+account.exit=0
+account=created user=cbxfinal1745 admin=1 password_delivery=ssh-stdin-fd3 kickstart=not_invoked
+gui-hold=ready timeout=60m auto-quit=0 stdin commands=status,field-observed,password,type-user,key,rfb,crabbox-type,crabbox-screenshot,set-crabbox,capture,quit
+gui-hold=password-in-memory-only output-scrubbed field-observed=0
+gui-hold=password-command-requires-field-observed-single-use
+gui-hold=command-errors-retain-secret=1
+gui-hold=successful-tests-do-not-auto-quit=1
+prlctl-json.exit=0
+gui-keys=sent events=24 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=typed-user user=cbxfinal1745
+gui-hold=field-observed exact-masked-password-field=parent-confirmed
+prlctl-json.exit=0
+gui-keys=sent events=84 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=password-typed-into-observed-field return=not-sent field-observed=consumed
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=key return
+gui-hold=set-crabbox path-admitted retained-secret=1 crabbox=$TASK_ROOT/crabbox-ff5d4cd5
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=key return
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=key escape
+gui-hold=field-observed exact-masked-password-field=parent-confirmed
+prlctl-json.exit=0
+gui-keys=sent events=84 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=password-typed-into-observed-field return=not-sent field-observed=consumed
+gui-hold=refused command=password reason=field-not-observed
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=key return
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=key return
+crabbox.stdout: typed: lease=cbx_12f11bb0ab75 bytes=33 method=vnc-key
+crabbox.exit=0
+gui-hold=crabbox-type password-via=env-only text-is-nonsecret parallels-user=cbxfinal1745
+gui-hold=kept-alive retained-secret=1 auto-quit=0
+crabbox.stdout: screenshot: $TASK_ROOT/evidence/final-rfb-after.png
+crabbox.exit=0
+gui-hold=crabbox-screenshot password-via=env-only parallels-user=cbxfinal1745
+gui-hold=kept-alive retained-secret=1 auto-quit=0
+rfb-session.stdout: rfb-session accepted_security=30 framebuffer_pending=2048x2442
+rfb-session.stdout: rfb-session initial_frame=$TASK_ROOT/evidence/final-rfb-after.png
+rfb-session.stdout: rfb-session class=input-effect-candidate security=30 framebuffer=2048x2442 nonblack=1 keys=80 user=cbxfinal1745 frame_changed=1 input_effect_candidate=1 nonce_text_observation=0
+rfb-session.stdout: screenshot=$TASK_ROOT/evidence/final-rfb-after.png
+rfb-session.exit=0
+gui-hold=rfb-probe-finished password-via=env-only
+gui-hold=kept-alive retained-secret=1 auto-quit=0
+crabbox.stdout: typed: lease=cbx_12f11bb0ab75 bytes=23 method=vnc-key
+crabbox.exit=0
+gui-hold=crabbox-type password-via=env-only text-is-nonsecret parallels-user=cbxfinal1745
+gui-hold=kept-alive retained-secret=1 auto-quit=0
+gui-hold=set-crabbox path-admitted retained-secret=1 crabbox=$TASK_ROOT/crabbox-0095e1a3
+crabbox.stdout: typed: lease=cbx_12f11bb0ab75 bytes=27 method=vnc-key
+crabbox.exit=0
+gui-hold=crabbox-type password-via=env-only text-is-nonsecret parallels-user=cbxfinal1745
+gui-hold=kept-alive retained-secret=1 auto-quit=0
+crabbox.stdout: typed: lease=cbx_12f11bb0ab75 bytes=19 method=vnc-key
+crabbox.exit=0
+gui-hold=crabbox-type password-via=env-only text-is-nonsecret parallels-user=cbxfinal1745
+gui-hold=kept-alive retained-secret=1 auto-quit=0
+crabbox.stdout: screenshot: $TASK_ROOT/evidence/final-rfb-after.png
+crabbox.exit=0
+gui-hold=crabbox-screenshot password-via=env-only parallels-user=cbxfinal1745
+gui-hold=kept-alive retained-secret=1 auto-quit=0
+prlctl-json.exit=0
+gui-keys=sent events=2 argv=prlctl-send-key-event-json stdin=numeric-key-events argv_has_secret=0 json_has_secret=0 payload_printed=0
+gui-hold=key return
+gui-hold=quit

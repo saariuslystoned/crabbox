@@ -1,0 +1,206 @@
+[
+	{
+		"ID": "cc38d3ad-2e77-4aa1-b83c-65b3cc145ea0",
+		"Name": "crabbox-cbx-12f11bb0ab75-pr1745-gui-route",
+		"Description": "",
+		"Type": "APPLE_VZ_VM",
+		"State": "running",
+		"OS": "macosx",
+		"Template": "no",
+		"Uptime": "3657",
+		"Home path": "\/Users\/$HOST_USER\/Developer\/_machine-runs\/crabbox-pr1745-gui-20260917\/vms\/crabbox-cbx-12f11bb0ab75-pr1745-gui-route.macvm\/config.pvs",
+		"Home": "\/Users\/$HOST_USER\/Developer\/_machine-runs\/crabbox-pr1745-gui-20260917\/vms\/crabbox-cbx-12f11bb0ab75-pr1745-gui-route.macvm\/",
+		"Restore Image": "",
+		"GuestTools": {
+			"state": "installed",
+			"version": "26.4.0-57513"
+		},
+		"Mouse and Keyboard": {
+			"Smart mouse optimized for games": "auto",
+			"Sticky mouse": "off",
+			"Smooth scrolling": "on",
+			"Keyboard optimization mode": "auto"
+		},
+		"USB and Bluetooth": {
+			"Automatic sharing cameras": "on",
+			"Automatic sharing bluetooth": "off",
+			"Automatic sharing smart cards": "off",
+			"Automatic sharing gamepads": "on",
+			"Support USB 3.0": "on"
+		},
+		"Startup and Shutdown": {
+			"Autostart": "off",
+			"Autostart delay": 0,
+			"Autostop": "suspend",
+			"Startup view": "same",
+			"On shutdown": "close",
+			"On window close": "suspend",
+			"Pause idle": "off",
+			"Undo disks": "off"
+		},
+		"Optimization": {
+			"Faster virtual machine": "on",
+			"Hypervisor type": "apple",
+			"Adaptive hypervisor": "off",
+			"Disabled Windows logo": "on",
+			"Auto compress virtual disks": "off",
+			"Nested virtualization": "off",
+			"PMU virtualization": "off",
+			"Longer battery life": "off",
+			"Show battery status": "on"
+		},
+		"Travel mode": {
+			"Enter condition": "never",
+			"Enter threshold": 30,
+			"Quit condition": "never"
+		},
+		"Security": {
+			"Encrypted": "no",
+			"TPM enabled": "no",
+			"TPM type": "off",
+			"Custom password protection": "off",
+			"Configuration is locked": "off",
+			"Protected": "no",
+			"Archived": "no",
+			"Packed": "no"
+		},
+		"Smart Guard": {
+			"enabled": false
+		},
+		"Modality": {
+			"Opacity (percentage)": 50,
+			"Stay on top": "on",
+			"Show on all spaces ": "on",
+			"Capture mouse clicks": "on"
+		},
+		"Fullscreen": {
+			"Use all displays": "off",
+			"Activate spaces on click": "on",
+			"Optimize for games": "off",
+			"Gamma control": "on",
+			"Scale view mode": "auto"
+		},
+		"Coherence": {
+			"Show Windows systray in Mac menu": "on",
+			"Auto-switch to full screen": "on"
+		},
+		"Time Synchronization": {
+			"enabled": true,
+			"Smart mode": "off",
+			"Interval (in seconds)": 60,
+			"Timezone synchronization disabled": "off"
+		},
+		"Expiration": {
+			"enabled": false
+		},
+		"Boot order": "hdd0 cdrom0 usb ",
+		"BIOS type": "efi-arm64",
+		"EFI Secure boot": "off",
+		"Allow select boot device": "off",
+		"External boot device": "",
+		"SMBIOS settings": {
+			"BIOS Version": "",
+			"System serial number": "",
+			"Board Manufacturer": ""
+		},
+		"Hardware": {
+			"cpu": {
+				"cpus": 4,
+				"auto": "on",
+				"VT-x": true,
+				"hotplug": false,
+				"accl": "high",
+				"mode": "64",
+				"type": "arm"
+			},
+			"memory": {
+				"size": "8192Mb",
+				"auto": "on",
+				"hotplug": false
+			},
+			"video": {
+				"adapter-type": "parallels",
+				"size": "0Mb",
+				"3d-acceleration": "highest",
+				"vertical-sync": "on",
+				"high-resolution": "off",
+				"high-resolution-in-guest": "on",
+				"native-scaling-in-guest": "off",
+				"automatic-video-memory": "on"
+			},
+			"memory_quota": {
+				"auto": "yes"
+			},
+			"hdd0": {
+				"enabled": true,
+				"port": "sata:0",
+				"image": "\/Users\/$HOST_USER\/Developer\/_machine-runs\/crabbox-pr1745-gui-20260917\/vms\/crabbox-cbx-12f11bb0ab75-pr1745-gui-route.macvm\/harddisk.hdd",
+				"type": "plain",
+				"size": "131072Mb",
+				"online-compact": "on"
+			},
+			"cdrom0": {
+				"enabled": true,
+				"port": "sata:1",
+				"image": "",
+				"state": "disconnected"
+			},
+			"usb": {
+				"enabled": true
+			},
+			"net0": {
+				"enabled": true,
+				"type": "shared",
+				"mac": "001C421BAF00",
+				"card": "virtio",
+				"preventpromisc": "off",
+				"mac_filter": "off",
+				"ip_filter": "off",
+				"nameservers": "",
+				"searchdomains": ""
+			},
+			"sound0": {
+				"enabled": true,
+				"output": "Default",
+				"mixer": "Default"
+			}
+		},
+		"Host Shared Folders": {
+			"enabled": false
+		},
+		"Host defined sharing": "Off",
+		"Shared Profile": {
+			"enabled": false
+		},
+		"Shared Applications": {
+			"enabled": true,
+			"Host-to-guest apps sharing": "on",
+			"Guest-to-host apps sharing": "on",
+			"Show guest apps folder in Dock": "off",
+			"Show guest notifications": "on",
+			"Bounce dock icon when app flashes": "on"
+		},
+		"SmartMount": {
+			"enabled": true,
+			"Removable drives": "on",
+			"CD/DVD drives": "on",
+			"Network shares": "on"
+		},
+		"Network": {
+			"Conditioned": "off",
+			"ipAddresses": []
+		},
+		"Miscellaneous Sharing": {
+			"Shared clipboard mode": "on",
+			"Shared cloud": "on"
+		},
+		"Advanced": {
+			"VM hostname synchronization": "off",
+			"Public SSH keys synchronization": "off",
+			"Show developer tools": "off",
+			"Swipe from edges": "off",
+			"Share host location": "on",
+			"Rosetta Linux": "off"
+		}
+	}
+]

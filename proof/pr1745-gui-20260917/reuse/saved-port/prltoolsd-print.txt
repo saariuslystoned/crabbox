@@ -1,0 +1,2 @@
+Bad request.
+Could not find service "com.parallels.vm.prltoolsd" in domain for system

@@ -1,0 +1,1 @@
+["$TASK_ROOT/crabbox-0095e1a3", "stop", "--provider", "parallels", "--target", "macos", "--id", "cbx_12f11bb0ab75"]

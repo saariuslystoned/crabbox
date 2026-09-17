@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-17T18:00:51.491278+00:00",
+  "records": [
+    {
+      "pid": 54520,
+      "state": "exact task process terminated"
+    },
+    {
+      "pid": 54694,
+      "state": "already absent"
+    },
+    {
+      "remaining_lease_ssh_pids": []
+    }
+  ]
+}

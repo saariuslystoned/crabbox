@@ -1,0 +1,9 @@
+provisioning provider=parallels lease=cbx_12f11bb0ab75 slug=pr1745-gui-route host=local source=d1cc3c01-c6a0-43a1-82c0-61b841f8f636 snapshot=- clone_mode=full keep=true
+waiting for $GUEST_IP:22 bootstrap ready-check... elapsed=5s remaining=19m55s ports=2222:closed,22:auth
+waiting for $GUEST_IP:22 bootstrap ready-check... elapsed=16s remaining=19m44s ports=2222:closed,22:auth
+using ssh port 22 for $GUEST_IP (configured 2222 not ready)
+provisioned lease=cbx_12f11bb0ab75 vm=cc38d3ad-2e77-4aa1-b83c-65b3cc145ea0 ip=$GUEST_IP
+leased cbx_12f11bb0ab75 slug=pr1745-gui-route provider=parallels server=cc38d3ad-2e77-4aa1-b83c-65b3cc145ea0 type=template-d1cc3c01-c6a0-43a1-82c0-61b841f8f636 ip=$GUEST_IP idle_timeout=2h0m0s expires=2026-09-17T18:28:24Z
+ready ssh=parallels-02@$GUEST_IP:22 network=public workroot=/Users/parallels-02/crabbox-work
+warmup complete total=40.06s
+{"provider":"parallels","leaseId":"cbx_12f11bb0ab75","slug":"pr1745-gui-route","runnerTotalMs":40060,"runnerPhases":[{"name":"unattributed","ms":40060}],"syncMs":0,"syncSkipped":false,"commandMs":0,"totalMs":40060,"endToEndMs":0,"exitCode":0,"runStatus":"succeeded"}

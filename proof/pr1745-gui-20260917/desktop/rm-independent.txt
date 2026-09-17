@@ -1,0 +1,6 @@
+2026-09-17T17:18:10.022559+00:00
+cbxgui1745
+dsAttrTypeNative:naprivs: -2147483646
+0
+listener5900=open
+Connection to 127.0.0.1 port 5900 [tcp/rfb] succeeded!

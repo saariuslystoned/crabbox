@@ -1,0 +1,17 @@
+2026-09-17T17:59:36.904011+00:00 cc38d3ad-2e77-4aa1-b83c-65b3cc145ea0 exact claim verified
+Shutdown NOW!
+
+System shutdown time has arrived
+Connection to $GUEST_IP closed by remote host.
+shutdown request exit: 255
+2026-09-17T17:59:37.203479+00:00 running
+2026-09-17T17:59:39.337069+00:00 running
+2026-09-17T17:59:41.454282+00:00 running
+2026-09-17T17:59:44.104858+00:00 starting
+2026-09-17T17:59:46.228060+00:00 running
+2026-09-17T17:59:48.354121+00:00 running
+2026-09-17T17:59:50.487047+00:00 running
+2026-09-17T17:59:52.618005+00:00 running
+2026-09-17T17:59:54.761377+00:00 running
+2026-09-17T17:59:56.885544+00:00 running
+final observed state: running

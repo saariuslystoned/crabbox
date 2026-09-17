@@ -1,0 +1,188 @@
+{
+  "mode": "live",
+  "source_uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636",
+  "unrelated_uuid": "58b49202-a6de-4e24-ba8f-c1890c778535",
+  "oldhost_source_uuid_forbidden": "b98e38c2-2d06-403c-872f-6315bc68b461",
+  "exact_hds_paths": [
+    "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{5fbaabe3-6958-40ff-92a7-860e329aab41}.hds",
+    "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{db2643d9-6201-49bd-90c0-5c3e3cc3f2e5}.hds"
+  ],
+  "exact_config_paths": [
+    "$SOURCE_ROOT/config.pvs",
+    "$SOURCE_ROOT/Snapshots.xml",
+    "$SOURCE_ROOT/aux.bin",
+    "$SOURCE_ROOT/machw.bin",
+    "$SOURCE_ROOT/macid.bin",
+    "$SOURCE_ROOT/harddisk.hdd/DiskDescriptor.xml",
+    "$HOST_HOME/Parallels/unrelated-vm.macvm/config.pvs"
+  ],
+  "before_config": "evidence/config-before.sha256",
+  "before_disk": "evidence/disk-before.txt",
+  "before_config_count": 7,
+  "before_disk_count": 2,
+  "intended": {
+    "inventory_readonly": [
+      "/usr/local/bin/prlctl",
+      "list",
+      "-a",
+      "-j"
+    ],
+    "openssl_hds": [
+      [
+        "/usr/bin/openssl",
+        "dgst",
+        "-sha256",
+        "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{5fbaabe3-6958-40ff-92a7-860e329aab41}.hds"
+      ],
+      [
+        "/usr/bin/openssl",
+        "dgst",
+        "-sha256",
+        "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{db2643d9-6201-49bd-90c0-5c3e3cc3f2e5}.hds"
+      ]
+    ],
+    "openssl_configs": [
+      [
+        "/usr/bin/openssl",
+        "dgst",
+        "-sha256",
+        "$SOURCE_ROOT/config.pvs"
+      ],
+      [
+        "/usr/bin/openssl",
+        "dgst",
+        "-sha256",
+        "$SOURCE_ROOT/Snapshots.xml"
+      ],
+      [
+        "/usr/bin/openssl",
+        "dgst",
+        "-sha256",
+        "$SOURCE_ROOT/aux.bin"
+      ],
+      [
+        "/usr/bin/openssl",
+        "dgst",
+        "-sha256",
+        "$SOURCE_ROOT/machw.bin"
+      ],
+      [
+        "/usr/bin/openssl",
+        "dgst",
+        "-sha256",
+        "$SOURCE_ROOT/macid.bin"
+      ],
+      [
+        "/usr/bin/openssl",
+        "dgst",
+        "-sha256",
+        "$SOURCE_ROOT/harddisk.hdd/DiskDescriptor.xml"
+      ],
+      [
+        "/usr/bin/openssl",
+        "dgst",
+        "-sha256",
+        "$HOST_HOME/Parallels/unrelated-vm.macvm/config.pvs"
+      ]
+    ],
+    "wildcard_delete": false,
+    "source_operation": false
+  },
+  "assumptions": [
+    "openssl dgst -sha256 on exact paths only; no directory glob of disk or config files.",
+    "prlctl list -a -j is inventory-only; no list -i / start / stop on source.",
+    "Byte-compare is after-hash == before-hash for all 2 HDS + 7 configs.",
+    "Other-host source b98e38c2... is not hashed and is not operated."
+  ],
+  "fixture_self_compare_hds": {
+    "byte_equal": true,
+    "equal_paths": [
+      "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{5fbaabe3-6958-40ff-92a7-860e329aab41}.hds",
+      "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{db2643d9-6201-49bd-90c0-5c3e3cc3f2e5}.hds"
+    ],
+    "missing_before": [],
+    "missing_after": [],
+    "mismatches": []
+  },
+  "fixture_self_compare_configs": {
+    "byte_equal": true,
+    "equal_paths": [
+      "$SOURCE_ROOT/config.pvs",
+      "$SOURCE_ROOT/Snapshots.xml",
+      "$SOURCE_ROOT/aux.bin",
+      "$SOURCE_ROOT/machw.bin",
+      "$SOURCE_ROOT/macid.bin",
+      "$SOURCE_ROOT/harddisk.hdd/DiskDescriptor.xml",
+      "$HOST_HOME/Parallels/unrelated-vm.macvm/config.pvs"
+    ],
+    "missing_before": [],
+    "missing_after": [],
+    "mismatches": []
+  },
+  "fixture_paths_ready": true,
+  "compared_at": "2026-09-17T18:03:33.965651+00:00",
+  "disk_before_after_equal": true,
+  "all_7_source_unrelated_config_hashes_match_original_baseline": true,
+  "disk_sha256": {
+    "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{5fbaabe3-6958-40ff-92a7-860e329aab41}.hds": "2d3309308981eaf719b65a00d5572b37c16d804cff0117e381cb9a3ab67b88b2",
+    "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{db2643d9-6201-49bd-90c0-5c3e3cc3f2e5}.hds": "aa725e3236e8132f1890daa20d671526795142cdeafab03444ecc2ca814b6ea0"
+  },
+  "config_sha256": {
+    "$SOURCE_ROOT/config.pvs": "87c20393d5567327f8546ab739d1fa3c545cd322fe6d07111cad9731472d00a7",
+    "$SOURCE_ROOT/Snapshots.xml": "b98767343173f4f4df44e4ebad51ea05a545e4971db44baae67f8b9e6a577c08",
+    "$SOURCE_ROOT/aux.bin": "7c228cdf7051cb2c9540a68bfa1f3e615a830d8dd82b5a25d94bfc95ed762e1d",
+    "$SOURCE_ROOT/machw.bin": "976e66740c64041cf9f127588f93eabf7efb9e7d3cbaee9582bcded88ba5e8d3",
+    "$SOURCE_ROOT/macid.bin": "232833db3b7dc2dd1c8a2008edf3d4b705164504e1ee5501ad13b429d342fa4b",
+    "$SOURCE_ROOT/harddisk.hdd/DiskDescriptor.xml": "0b4da07a489464d73342e3607dc39deca785d13d76309af3847ea3c361a43bfa",
+    "$HOST_HOME/Parallels/unrelated-vm.macvm/config.pvs": "34b94cf8867b25aff3f307cbd7d3dd677da0e2b62b42c4ab855e80c542d68189"
+  },
+  "disk_compare": {
+    "byte_equal": true,
+    "equal_paths": [
+      "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{5fbaabe3-6958-40ff-92a7-860e329aab41}.hds",
+      "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{db2643d9-6201-49bd-90c0-5c3e3cc3f2e5}.hds"
+    ],
+    "missing_before": [],
+    "missing_after": [],
+    "mismatches": []
+  },
+  "config_compare": {
+    "byte_equal": true,
+    "equal_paths": [
+      "$SOURCE_ROOT/config.pvs",
+      "$SOURCE_ROOT/Snapshots.xml",
+      "$SOURCE_ROOT/aux.bin",
+      "$SOURCE_ROOT/machw.bin",
+      "$SOURCE_ROOT/macid.bin",
+      "$SOURCE_ROOT/harddisk.hdd/DiskDescriptor.xml",
+      "$HOST_HOME/Parallels/unrelated-vm.macvm/config.pvs"
+    ],
+    "missing_before": [],
+    "missing_after": [],
+    "mismatches": []
+  },
+  "source_disk_stat": {
+    "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{5fbaabe3-6958-40ff-92a7-860e329aab41}.hds": {
+      "bytes": 137438953472,
+      "mtime": 1783878738
+    },
+    "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{db2643d9-6201-49bd-90c0-5c3e3cc3f2e5}.hds": {
+      "bytes": 137438953472,
+      "mtime": 1783690961
+    }
+  },
+  "post_cleanup_source_state": "stopped",
+  "post_cleanup_unrelated_state": "suspended",
+  "source_unrelated": {
+    "source_present": true,
+    "source_state": "stopped",
+    "source_stopped": true,
+    "unrelated_present": true,
+    "unrelated_state": "suspended",
+    "unrelated_suspended": true,
+    "oldhost_source_present_on_this_host": false,
+    "ok": true
+  },
+  "result": "PASS",
+  "scope_note": "No operation targeted either source VM. Alternate stopped source full disk content and configuration compared at exact before paths. Historically modified running source on the other host was not used."
+}

@@ -1,0 +1,14 @@
+ProductName:		macOS
+ProductVersion:		26.5.2
+BuildVersion:		25F84
+workspace owner acquired wait=45ms recovered=false
+run context:
+  run=run_33df9598249814109810c328390e7bb4 portal=- logs=-
+  lease=cbx_12f11bb0ab75 slug=pr1745-gui-route provider=parallels target=macos type=template
+  ssh=parallels-02@$GUEST_IP:22 ip=$GUEST_IP
+  workdir=/Users/parallels-02/crabbox-work/cbx_12f11bb0ab75/workspace workspace=raw actions=-
+running on $GUEST_IP /usr/bin/sw_vers
+command complete in 346ms total=682ms
+run summary lease=226ms bootstrap=189ms sync=0s command=346ms total=682ms end_to_end=1.105s sync_skipped=true exit=0 command_phases=user-command:345ms
+run details provider=parallels lease=cbx_12f11bb0ab75 slug=pr1745-gui-route run=run_33df9598249814109810c328390e7bb4 type=template repo=$E2E_ROOT/workspace workdir=/Users/parallels-02/crabbox-work/cbx_12f11bb0ab75/workspace actions=- stop_command="crabbox stop --provider parallels --target macos --id pr1745-gui-route" idle_timeout=2h0m0s
+workspace owner released

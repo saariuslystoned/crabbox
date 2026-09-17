@@ -1,0 +1,107 @@
+{
+  "mode": "live",
+  "lease_id": "cbx_12f11bb0ab75",
+  "vm_id": "cc38d3ad-2e77-4aa1-b83c-65b3cc145ea0",
+  "expected_name": "crabbox-cbx-12f11bb0ab75-pr1745-gui-route",
+  "expected_bundle": "$TASK_ROOT/vms/crabbox-cbx-12f11bb0ab75-pr1745-gui-route.macvm",
+  "claim_admitted": true,
+  "exact_force_stop_enabled": false,
+  "poll_seconds": 90,
+  "intended": {
+    "inventory": [
+      "/usr/local/bin/prlctl",
+      "list",
+      "-a",
+      "-j"
+    ],
+    "clone_info": [
+      "/usr/local/bin/prlctl",
+      "list",
+      "-i",
+      "-f",
+      "-j",
+      "cc38d3ad-2e77-4aa1-b83c-65b3cc145ea0"
+    ],
+    "graceful_exact_clone_stop": [
+      "/usr/local/bin/prlctl",
+      "exec",
+      "cc38d3ad-2e77-4aa1-b83c-65b3cc145ea0",
+      "--",
+      "/sbin/shutdown",
+      "-h",
+      "now"
+    ],
+    "optional_exact_force_stop": null,
+    "native_crabbox_stop_only_after_independently_stopped": [
+      "$TASK_ROOT/crabbox-0095e1a3",
+      "stop",
+      "--provider",
+      "parallels",
+      "--target",
+      "macos",
+      "--id",
+      "cbx_12f11bb0ab75"
+    ],
+    "wildcard_delete": false,
+    "source_operation": false
+  },
+  "lease_material": {
+    "claim": "$E2E_ROOT/state/crabbox/claims/cbx_12f11bb0ab75.json",
+    "claim_absent": true,
+    "key_dir": "$E2E_ROOT/state/crabbox/testboxes/cbx_12f11bb0ab75",
+    "key_dir_absent": true,
+    "metadata_candidates": [
+      "$E2E_ROOT/state/crabbox/state/parallels/leases/cbx_12f11bb0ab75.json",
+      "$E2E_ROOT/state/parallels/leases/cbx_12f11bb0ab75.json",
+      "$E2E_ROOT/state/crabbox/parallels/leases/cbx_12f11bb0ab75.json"
+    ],
+    "metadata_absent": true,
+    "metadata_present": [],
+    "bundle": "$TASK_ROOT/vms/crabbox-cbx-12f11bb0ab75-pr1745-gui-route.macvm",
+    "bundle_absent": true
+  },
+  "assumptions": [
+    "First cleanup attempt must refuse delete if shutdown text succeeds but inventory is not stopped.",
+    "Optional force-stop is exact UUID prlctl stop --kill only, then another independent poll.",
+    "Native crabbox stop uses --provider parallels --target macos --id <exact lease>.",
+    "Source d1cc3c01..., unrelated 58b49202..., old-host b98e38c2... are never targeted.",
+    "No recursive delete and no glob delete of the vms or claims trees."
+  ],
+  "at": "2026-09-17T18:00:16.728353+00:00",
+  "result": "PASS",
+  "exact_claim_uuid_name_bundle_guard": "pass",
+  "independent_state_before_release": "stopped",
+  "exact_force_stop_used": false,
+  "guarded_release_exit": 0,
+  "independent_after_release_inventory": [
+    {
+      "uuid": "58b49202-a6de-4e24-ba8f-c1890c778535",
+      "status": "suspended",
+      "ip_configured": "-",
+      "name": "unrelated-vm"
+    },
+    {
+      "uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636",
+      "status": "stopped",
+      "ip_configured": "-",
+      "name": "macOS"
+    }
+  ],
+  "clone_uuid_absent": true,
+  "source_unrelated": {
+    "source_present": true,
+    "source_state": "stopped",
+    "source_stopped": true,
+    "unrelated_present": true,
+    "unrelated_state": "suspended",
+    "unrelated_suspended": true,
+    "oldhost_source_present_on_this_host": false,
+    "ok": true
+  },
+  "claim": {
+    "leaseID": "cbx_12f11bb0ab75",
+    "cloudID": "cc38d3ad-2e77-4aa1-b83c-65b3cc145ea0",
+    "labels.host": "local",
+    "sshPort": 22
+  }
+}

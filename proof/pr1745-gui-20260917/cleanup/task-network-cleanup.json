@@ -1,0 +1,6 @@
+{
+  "at": "2026-09-17T18:04:53.493768+00:00",
+  "task_ssh_connection_or_listener_rows": [],
+  "task_ssh_network_absent": true,
+  "unrelated_sshd_listener_left_untouched": true
+}

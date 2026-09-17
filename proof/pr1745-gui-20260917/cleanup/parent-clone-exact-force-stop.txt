@@ -1,0 +1,22 @@
+Stopping the VM...
+The VM has been forcibly stopped
+[
+	{
+		"uuid": "58b49202-a6de-4e24-ba8f-c1890c778535",
+		"status": "suspended",
+		"ip_configured": "-",
+		"name": "unrelated-vm"
+	},
+	{
+		"uuid": "cc38d3ad-2e77-4aa1-b83c-65b3cc145ea0",
+		"status": "stopped",
+		"ip_configured": "-",
+		"name": "crabbox-cbx-12f11bb0ab75-pr1745-gui-route"
+	},
+	{
+		"uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636",
+		"status": "stopped",
+		"ip_configured": "-",
+		"name": "macOS"
+	}
+]

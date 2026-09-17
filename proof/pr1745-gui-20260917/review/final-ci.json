@@ -1,0 +1,29 @@
+{
+  "baseRefOid": "276a90470a8513a150cc5deffad47ac9403af6c3",
+  "headRefOid": "0095e1a32cc6379ff0d401cd5cbd4adb5fe20923",
+  "mergeStateStatus": "BLOCKED",
+  "mergeable": "MERGEABLE",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-17T17:58:29Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/openclaw/crabbox/actions/runs/35255958524/job/105319553592",
+      "name": "dispatch",
+      "startedAt": "2026-09-17T17:58:23Z",
+      "status": "COMPLETED",
+      "workflowName": "ClawSweeper Dispatch"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-17T17:58:19Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://backend.blacksmith.sh/track/enable-autofix",
+      "name": "[code]smith",
+      "startedAt": "2026-09-17T17:58:19Z",
+      "status": "COMPLETED",
+      "workflowName": ""
+    }
+  ],
+  "url": "https://github.com/openclaw/crabbox/pull/1745"
+}
