@@ -1,0 +1,13 @@
+provisioning provider=parallels lease=cbx_406764ae8f7a slug=pr1745-finalhead-ssh host=local source=d1cc3c01-c6a0-43a1-82c0-61b841f8f636 snapshot=- clone_mode=full keep=true
+waiting for 10.211.55.11:22 bootstrap ready-check... elapsed=5s remaining=19m55s ports=22:auth
+waiting for 10.211.55.11:22 bootstrap ready-check... elapsed=15s remaining=19m45s ports=22:auth
+waiting for 10.211.55.11:22 bootstrap ready-check... elapsed=25s remaining=19m35s ports=22:auth
+waiting for 10.211.55.11:22 bootstrap ready-check... elapsed=36s remaining=19m24s ports=22:auth
+waiting for 10.211.55.11:22 bootstrap ready-check... elapsed=46s remaining=19m14s ports=22:auth
+waiting for 10.211.55.11:22 bootstrap ready-check... elapsed=56s remaining=19m4s ports=22:auth
+waiting for 10.211.55.11:22 bootstrap ready-check... elapsed=1m6s remaining=18m54s ports=22:auth
+provisioned lease=cbx_406764ae8f7a vm=f3f156aa-93c3-4656-848c-05d472a57916 ip=10.211.55.11
+leased cbx_406764ae8f7a slug=pr1745-finalhead-ssh provider=parallels server=f3f156aa-93c3-4656-848c-05d472a57916 type=template-d1cc3c01-c6a0-43a1-82c0-61b841f8f636 ip=10.211.55.11 idle_timeout=2h0m0s expires=2026-09-17T13:42:19Z
+ready ssh=parallels-02@10.211.55.11:22 network=public workroot=/Users/parallels-02/crabbox-work
+warmup complete total=1m30.888s
+{"provider":"parallels","leaseId":"cbx_406764ae8f7a","slug":"pr1745-finalhead-ssh","runnerTotalMs":90888,"runnerPhases":[{"name":"unattributed","ms":90888}],"syncMs":0,"syncSkipped":false,"commandMs":0,"totalMs":90888,"endToEndMs":0,"exitCode":0,"runStatus":"succeeded"}

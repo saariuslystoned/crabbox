@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-09-17T12:03:49.877058+00:00",
+  "head": "03de7896dd094e5feb7c74d480ce3995d2c8760f",
+  "rebased_base": "74dd94d304fae007b27dd0bb7268718023b0ace6",
+  "latest_main": "09df29ccc90bef484257756b2a322cb698761918",
+  "new_main_commits": "09df29cc test(macos): isolate Linux installer temporary fixtures",
+  "new_main_files": "scripts/linux-toolchain-archives.test.js",
+  "merge_tree": "c85018af089032e5611c6ca709388777237c0b2d",
+  "worktree_clean": true,
+  "note": "Latest-main change is unrelated Linux installer temporary-fixture test isolation. Final-head proof binary is unchanged."
+}

@@ -1,0 +1,15 @@
+workspace owner acquired wait=75ms recovered=false
+run context:
+  run=run_1bf762d8540dace728f5c6dc27f066d9 portal=- logs=-
+  lease=cbx_406764ae8f7a slug=pr1745-finalhead-ssh provider=parallels target=macos type=template
+  ssh=parallels-02@10.211.55.11:22 ip=10.211.55.11
+  workdir=/Users/parallels-02/crabbox-work/cbx_406764ae8f7a/workspace workspace=raw actions=-
+running on 10.211.55.11 /usr/bin/sw_vers
+ProductName:		macOS
+ProductVersion:		26.5.2
+BuildVersion:		25F84
+command complete in 377ms total=760ms
+run summary lease=260ms bootstrap=214ms sync=0s command=377ms total=760ms end_to_end=1.64s sync_skipped=true exit=0 command_phases=user-command:377ms
+run details provider=parallels lease=cbx_406764ae8f7a slug=pr1745-finalhead-ssh run=run_1bf762d8540dace728f5c6dc27f066d9 type=template repo=$TASK_ROOT/workspace workdir=/Users/parallels-02/crabbox-work/cbx_406764ae8f7a/workspace actions=- stop_command="crabbox stop --provider parallels --target macos --id pr1745-finalhead-ssh" idle_timeout=2h0m0s
+workspace owner released
+{"provider":"parallels","leaseId":"cbx_406764ae8f7a","slug":"pr1745-finalhead-ssh","runnerTotalMs":1697,"runnerPhases":[{"name":"provider.resolve","ms":259,"provider":"parallels","leaseId":"cbx_406764ae8f7a","slug":"pr1745-finalhead-ssh","machineType":"template"},{"name":"connect.ssh","ms":728,"provider":"parallels","leaseId":"cbx_406764ae8f7a","slug":"pr1745-finalhead-ssh","machineType":"template"},{"name":"command","ms":377,"provider":"parallels","leaseId":"cbx_406764ae8f7a","slug":"pr1745-finalhead-ssh","runId":"run_1bf762d8540dace728f5c6dc27f066d9","machineType":"template"},{"name":"cleanup","ms":53,"provider":"parallels","leaseId":"cbx_406764ae8f7a","slug":"pr1745-finalhead-ssh","machineType":"template"},{"name":"unattributed","ms":280}],"leaseMs":259,"bootstrapMs":214,"syncMs":0,"syncSkipped":true,"commandMs":377,"commandPhases":[{"name":"user-command","ms":377}],"totalMs":759,"endToEndMs":1639,"exitCode":0,"runStatus":"succeeded","runId":"run_1bf762d8540dace728f5c6dc27f066d9","machineType":"template","repoPath":"$TASK_ROOT/workspace","workdir":"/Users/parallels-02/crabbox-work/cbx_406764ae8f7a/workspace","stopCommand":"crabbox stop --provider parallels --target macos --id pr1745-finalhead-ssh","idleTimeout":"2h0m0s"}

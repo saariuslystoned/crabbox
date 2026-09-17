@@ -1,0 +1,16 @@
+Removing the VM...
+The VM has been successfully removed.
+[
+	{
+		"uuid": "58b49202-a6de-4e24-ba8f-c1890c778535",
+		"status": "suspended",
+		"ip_configured": "-",
+		"name": "unrelated-vm"
+	},
+	{
+		"uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636",
+		"status": "stopped",
+		"ip_configured": "-",
+		"name": "macOS"
+	}
+]

@@ -1,0 +1,7 @@
+stage.exit=0
+stage.exit=0
+stage.exit=0
+staged guest=/tmp/cbxdesk1745-create-account.sh odpasswd=/tmp/cbxdesk1745-od-passwd pubkey=/tmp/cbxdesk1745-lease.pub
+account.stderr: od-error domain=com.apple.OpenDirectory code=5100
+account.exit=1
+guest account setup failed

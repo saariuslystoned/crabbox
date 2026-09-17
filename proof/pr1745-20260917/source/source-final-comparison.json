@@ -1,0 +1,29 @@
+{
+  "compared_at": "2026-09-17T12:16:12.811207+00:00",
+  "source_uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636",
+  "disk_before_after_equal": true,
+  "independent_before_hash_tools_agree": true,
+  "disk_sha256": {
+    "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{5fbaabe3-6958-40ff-92a7-860e329aab41}.hds": "2d3309308981eaf719b65a00d5572b37c16d804cff0117e381cb9a3ab67b88b2",
+    "$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{db2643d9-6201-49bd-90c0-5c3e3cc3f2e5}.hds": "aa725e3236e8132f1890daa20d671526795142cdeafab03444ecc2ca814b6ea0"
+  },
+  "all_7_source_unrelated_config_hashes_match_original_baseline": true,
+  "source_disk_sizes_and_mtimes_match_original_baseline": true,
+  "post_cleanup_source_state": "stopped",
+  "post_cleanup_unrelated_state": "suspended",
+  "post_cleanup_owned_vm_bundles": [],
+  "post_cleanup_lease_material_absent": {
+    "cbx_406764ae8f7a": {
+      "claim": true,
+      "lease_key_dir": true,
+      "lease_metadata": true
+    },
+    "cbx_56d2cacc3552": {
+      "claim": true,
+      "lease_key_dir": true,
+      "lease_metadata": true
+    }
+  },
+  "result": "PASS",
+  "scope_note": "No operation targeted either source VM. Alternate stopped source full disk content and configuration preserved. Historically modified running source on other host was not used for this proof; no byte-immutability claim for its live disks."
+}

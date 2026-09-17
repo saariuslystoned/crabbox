@@ -1,0 +1,7 @@
+Thu Sep 17 12:10:06 UTC 2026
+Timestamp               Ty Process[PID:TID]
+2026-09-17 08:08:53.282 E  kernel[0:127e] [com.apple.sandbox.reporting:violation] System Policy: perl(981) deny(1) file-write-create /Library/Application Support/Apple/Remote Desktop/RemoteManagement.launchd
+2026-09-17 08:09:55.682 Df log[1173:17a1] [com.apple.log:] log run noninteractively, parent: 1171 (sudo), args: '/usr/bin/log' 'show' '--style' 'compact' '--last' '3m' '--predicate' 'eventMessage CONTAINS "kickstart" OR eventMessage CONTAINS "RemoteManagement.launchd"'
+2026-09-17 08:10:06.311 Df log[1188:17fd] [com.apple.log:] log run noninteractively, parent: 1187 (sudo), args: '/usr/bin/log' 'show' '--style' 'compact' '--last' '8m' '--predicate' 'eventMessage CONTAINS "RemoteManagement.launchd"'
+UniqueID: 504
+drwxr-xr-x  3 root  wheel  96 Jun 24 22:30 /Library/Application Support/Apple/Remote Desktop

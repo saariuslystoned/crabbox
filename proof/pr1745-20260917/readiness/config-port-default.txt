@@ -1,0 +1,4 @@
+provider=parallels provider_selected=true provider_source=user_config target=macos arch=amd64 architecture_explicit=false os=ubuntu:26.04 windows_mode=normal class=beast type=template profile=default
+ssh=parallels-02@<host>:2222 fallback_ports=22 key=$HOST_HOME/.ssh/id_ed25519
+parallels template=- source=- source_id=- snapshot=- snapshot_id=- clone_mode=linked host=local user=parallels-02 auth=missing work_root=/Users/parallels-02/crabbox-work startup_timeout=15m0s templates=0 hosts=0
+provider_status name=parallels supported=true selected=true selection_source=user_config configuration=explicit input_coverage_complete=true provider_sources=user_config generic_sources=user_config auth_status=unchecked readiness=unchecked auth_interfaces=local-host:local_context;remote-host:ssh

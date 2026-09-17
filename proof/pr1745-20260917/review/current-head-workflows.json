@@ -1,0 +1,47 @@
+[
+  {
+    "conclusion": "action_required",
+    "createdAt": "2026-09-17T11:42:36Z",
+    "databaseId": 35217119469,
+    "headSha": "03de7896dd094e5feb7c74d480ce3995d2c8760f",
+    "status": "completed",
+    "url": "https://github.com/openclaw/crabbox/actions/runs/35217119469",
+    "workflowName": "CI"
+  },
+  {
+    "conclusion": "action_required",
+    "createdAt": "2026-09-17T11:42:36Z",
+    "databaseId": 35217119562,
+    "headSha": "03de7896dd094e5feb7c74d480ce3995d2c8760f",
+    "status": "completed",
+    "url": "https://github.com/openclaw/crabbox/actions/runs/35217119562",
+    "workflowName": ""
+  },
+  {
+    "conclusion": "action_required",
+    "createdAt": "2026-09-17T11:42:36Z",
+    "databaseId": 35217119586,
+    "headSha": "03de7896dd094e5feb7c74d480ce3995d2c8760f",
+    "status": "completed",
+    "url": "https://github.com/openclaw/crabbox/actions/runs/35217119586",
+    "workflowName": "Docs UI Proof"
+  },
+  {
+    "conclusion": "action_required",
+    "createdAt": "2026-09-17T11:42:36Z",
+    "databaseId": 35217119631,
+    "headSha": "03de7896dd094e5feb7c74d480ce3995d2c8760f",
+    "status": "completed",
+    "url": "https://github.com/openclaw/crabbox/actions/runs/35217119631",
+    "workflowName": "Connector E2E Smokes"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-09-17T11:42:34Z",
+    "databaseId": 35217116388,
+    "headSha": "03de7896dd094e5feb7c74d480ce3995d2c8760f",
+    "status": "completed",
+    "url": "https://github.com/openclaw/crabbox/actions/runs/35217116388",
+    "workflowName": "ClawSweeper Dispatch"
+  }
+]

@@ -1,0 +1,34 @@
++ date -u
+Thu Sep 17 11:59:39 UTC 2026
++ ../crabbox config show
++ grep '^ssh='
+ssh=parallels-02@<host>:2222 fallback_ports=22 key=$HOST_HOME/.ssh/id_ed25519
++ /usr/bin/python3 -c 'import json; c=json.load(open("../state/crabbox/claims/cbx_406764ae8f7a.json")); print({k:c[k] for k in ["leaseID","cloudID","sshPort"]});print("host="+c["labels"]["host"])'
+{'leaseID': 'cbx_406764ae8f7a', 'cloudID': 'f3f156aa-93c3-4656-848c-05d472a57916', 'sshPort': 22}
+host=local
++ /usr/local/bin/prlctl list -i -f -j f3f156aa-93c3-4656-848c-05d472a57916
++ /usr/bin/python3 -c 'import json,sys;x=json.load(sys.stdin)[0];assert not x["Network"]["ipAddresses"];print({k:x[k] for k in ["ID","State","GuestTools","Network"]})'
+{'ID': 'f3f156aa-93c3-4656-848c-05d472a57916', 'State': 'running', 'GuestTools': {'state': 'installed', 'version': '26.4.0-57513'}, 'Network': {'Conditioned': 'off', 'ipAddresses': []}}
++ /usr/bin/nc -G 3 -z 10.211.55.11 22
+Connection to 10.211.55.11 port 22 [tcp/ssh] succeeded!
++ /usr/bin/nc -G 3 -z 10.211.55.11 2222
++ printf '%s\n' '2222 independently closed'
+2222 independently closed
++ ../crabbox run --provider parallels --target macos --id cbx_406764ae8f7a --no-sync --timing-json -- /usr/bin/sw_vers
+workspace owner acquired wait=73ms recovered=false
+run context:
+  run=run_db6e59bd0d2455718b412ca923ba0be0 portal=- logs=-
+  lease=cbx_406764ae8f7a slug=pr1745-finalhead-ssh provider=parallels target=macos type=template
+  ssh=parallels-02@10.211.55.11:22 ip=10.211.55.11
+  workdir=/Users/parallels-02/crabbox-work/cbx_406764ae8f7a/workspace workspace=raw actions=-
+running on 10.211.55.11 /usr/bin/sw_vers
+ProductName:		macOS
+ProductVersion:		26.5.2
+BuildVersion:		25F84
+command complete in 397ms total=820ms
+run summary lease=229ms bootstrap=252ms sync=0s command=397ms total=820ms end_to_end=1.792s sync_skipped=true exit=0 command_phases=user-command:397ms
+run details provider=parallels lease=cbx_406764ae8f7a slug=pr1745-finalhead-ssh run=run_db6e59bd0d2455718b412ca923ba0be0 type=template repo=$TASK_ROOT/workspace workdir=/Users/parallels-02/crabbox-work/cbx_406764ae8f7a/workspace actions=- stop_command="crabbox stop --provider parallels --target macos --id pr1745-finalhead-ssh" idle_timeout=2h0m0s
+workspace owner released
+{"provider":"parallels","leaseId":"cbx_406764ae8f7a","slug":"pr1745-finalhead-ssh","runnerTotalMs":1857,"runnerPhases":[{"name":"provider.resolve","ms":229,"provider":"parallels","leaseId":"cbx_406764ae8f7a","slug":"pr1745-finalhead-ssh","machineType":"template"},{"name":"connect.ssh","ms":892,"provider":"parallels","leaseId":"cbx_406764ae8f7a","slug":"pr1745-finalhead-ssh","machineType":"template"},{"name":"command","ms":397,"provider":"parallels","leaseId":"cbx_406764ae8f7a","slug":"pr1745-finalhead-ssh","runId":"run_db6e59bd0d2455718b412ca923ba0be0","machineType":"template"},{"name":"cleanup","ms":60,"provider":"parallels","leaseId":"cbx_406764ae8f7a","slug":"pr1745-finalhead-ssh","machineType":"template"},{"name":"unattributed","ms":279}],"leaseMs":229,"bootstrapMs":252,"syncMs":0,"syncSkipped":true,"commandMs":397,"commandPhases":[{"name":"user-command","ms":397}],"totalMs":819,"endToEndMs":1792,"exitCode":0,"runStatus":"succeeded","runId":"run_db6e59bd0d2455718b412ca923ba0be0","machineType":"template","repoPath":"$TASK_ROOT/workspace","workdir":"/Users/parallels-02/crabbox-work/cbx_406764ae8f7a/workspace","stopCommand":"crabbox stop --provider parallels --target macos --id pr1745-finalhead-ssh","idleTimeout":"2h0m0s"}
++ date -u
+Thu Sep 17 11:59:41 UTC 2026

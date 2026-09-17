@@ -1,0 +1,8 @@
+stage.exit=0
+stage.exit=0
+stage.exit=0
+staged guest=/tmp/cbxdesk1745-create-account.sh jxa=/tmp/cbxdesk1745-set-od-password.jxa pubkey=/tmp/cbxdesk1745-lease.pub
+account.stderr: set-od-password: OpenDirectory password set failed
+account.stderr: /tmp/cbxdesk1745-set-od-password.jxa: execution error: Error: Error: OpenDirectory password set failed (-2700)
+account.exit=1
+guest account setup failed

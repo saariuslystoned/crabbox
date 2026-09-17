@@ -1,0 +1,11 @@
+2026-09-17T12:11:49.908131+00:00 exact_claim_uuid_name_bundle_guard=pass independent_state=stopped
+prior_guest_shutdown_did_not_stop_within_wait; exact_uuid_prlctl_stop_--kill_used; current_stopped_state_independently_rechecked
+guarded_release_argv=["$TASK_ROOT/crabbox", "stop", "--provider", "parallels", "--target", "macos", "--id", "cbx_406764ae8f7a"]
+deleted lease=cbx_406764ae8f7a server=f3f156aa-93c3-4656-848c-05d472a57916 name=crabbox-cbx-406764ae8f7a-pr1745-finalhead-ssh
+guarded_release_exit= 0
+independent_after_release_inventory=[{"uuid": "58b49202-a6de-4e24-ba8f-c1890c778535", "status": "suspended", "ip_configured": "-", "name": "unrelated-vm"}, {"uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636", "status": "stopped", "ip_configured": "-", "name": "macOS"}]
+clone_bundle_absent=true
+claim_absent=true
+lease_key_dir_absent=true
+lease_metadata_absent=true
+2026-09-17T12:11:50.789900+00:00 guarded_cleanup_and_independent_absence=PASS

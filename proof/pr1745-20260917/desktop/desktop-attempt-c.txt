@@ -1,0 +1,16 @@
+stage.exit=0
+stage.exit=0
+stage.exit=0
+staged guest=/tmp/cbxdesk1745-create-account.sh odpasswd=/tmp/cbxdesk1745-od-passwd pubkey=/tmp/cbxdesk1745-lease.pub
+account.stdout: Starting...
+account.stdout: Screen recording might be disabled. Screen Sharing or Remote Management must be enabled from System Settings or via MDM.
+account.stdout: Screen control might be disabled. Screen Sharing or Remote Management must be enabled from System Settings or via MDM.
+account.stderr: native-adduser tool=sysadminctl password_flag=- delivery=pty-after-prompt
+account.stderr: pty-child-argv=/usr/sbin/sysadminctl -addUser cbxdesk1745c -fullName cbxdesk1745c -UID 504 -GID 20 -shell /bin/zsh -home /Users/cbxdesk1745c -password - argv_has_secret=0
+account.stderr: pty-prompt=new-user-password secret_fed=1
+account.stderr: native-verify user=cbxdesk1745c uid=504 verify=ok
+account.stderr: password-set user=cbxdesk1745c uid=504 via=sysadminctl-pty verify=ok
+account.stderr: auth_authority=present user=cbxdesk1745c uid=504 via=sysadminctl-pty
+account.stderr: Can't call method "print" on an undefined value at /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart line 695.
+account.exit=1
+guest account setup failed

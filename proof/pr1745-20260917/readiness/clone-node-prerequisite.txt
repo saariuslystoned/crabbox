@@ -1,0 +1,4 @@
+v22.23.1
+10.9.8
+
+operator_clone_only_node_install_exit=0

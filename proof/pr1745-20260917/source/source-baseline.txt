@@ -1,0 +1,23 @@
+[
+	{
+		"uuid": "58b49202-a6de-4e24-ba8f-c1890c778535",
+		"status": "suspended",
+		"ip_configured": "-",
+		"name": "unrelated-vm"
+	},
+	{
+		"uuid": "d1cc3c01-c6a0-43a1-82c0-61b841f8f636",
+		"status": "stopped",
+		"ip_configured": "-",
+		"name": "macOS"
+	}
+]
+87c20393d5567327f8546ab739d1fa3c545cd322fe6d07111cad9731472d00a7  $SOURCE_ROOT/config.pvs
+b98767343173f4f4df44e4ebad51ea05a545e4971db44baae67f8b9e6a577c08  $SOURCE_ROOT/Snapshots.xml
+7c228cdf7051cb2c9540a68bfa1f3e615a830d8dd82b5a25d94bfc95ed762e1d  $SOURCE_ROOT/aux.bin
+976e66740c64041cf9f127588f93eabf7efb9e7d3cbaee9582bcded88ba5e8d3  $SOURCE_ROOT/machw.bin
+232833db3b7dc2dd1c8a2008edf3d4b705164504e1ee5501ad13b429d342fa4b  $SOURCE_ROOT/macid.bin
+0b4da07a489464d73342e3607dc39deca785d13d76309af3847ea3c361a43bfa  $SOURCE_ROOT/harddisk.hdd/DiskDescriptor.xml
+$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{5fbaabe3-6958-40ff-92a7-860e329aab41}.hds 137438953472 1783878738
+$SOURCE_ROOT/harddisk.hdd/harddisk.hdd.0.{db2643d9-6201-49bd-90c0-5c3e3cc3f2e5}.hds 137438953472 1783690961
+34b94cf8867b25aff3f307cbd7d3dd677da0e2b62b42c4ab855e80c542d68189  $HOST_HOME/Parallels/unrelated-vm.macvm/config.pvs
